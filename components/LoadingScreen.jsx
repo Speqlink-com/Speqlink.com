@@ -140,7 +140,7 @@ const LoadingScreen = ({ onComplete }) => {
         <div className="relative">
           <div className="text-2xl font-bold text-white drop-shadow-[0_0_10px_rgba(96,165,250,0.5)]">
             <TypingEffect
-              texts={["Initializing immersive experience...hold tight"]}
+              texts={["Architecturing Intelligent Solutions..."]}
               typingDelay={60}
               loop={false}
               onTypingComplete={() => setTypingComplete(true)}

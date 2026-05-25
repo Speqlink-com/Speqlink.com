@@ -8,101 +8,69 @@ import { Button } from '@/components/ui/button';
 
 const services = [
     {
-        title: 'Software Development',
-        desc: 'Custom software solutions built with modern technologies and best practices. We create scalable, maintainable applications that solve real business problems.',
-        video: '/video.mp4',
+        title: 'Intelligent Web Platforms',
+        desc: 'Enterprise-grade web systems engineered for performance, scalability, and intelligent automation. From SaaS platforms to multi-tenant architectures.',
+        video: '/software.mp4',
         color: 'from-blue-800 to-cyan-600',
-        tools: ['Node.js', 'Python', 'Java', 'C#', 'PostgreSQL', 'MongoDB'],
-        features: ['Custom Applications', 'API Development', 'Database Design', 'System Architecture']
+        tools: ['Next.js', 'React', 'TanStack', 'FastAPI', 'TypeScript', 'PostgreSQL'],
+        features: ['Enterprise Websites', 'SaaS Platforms', 'Admin Dashboards', 'Multi-tenant Systems']
     },
     {
-        title: 'Website Development & Design',
-        desc: 'Stunning, responsive websites with modern frameworks and cutting-edge design. We focus on user experience, performance, and conversion optimization.',
-        video: '/web.mp4',
-        color: 'from-blue-900 to-sky-500',
-        tools: ['React', 'Next.js', 'Tailwind CSS', 'TypeScript', 'FastAPI', 'Framer Motion'],
-        features: ['Responsive Design', 'SEO Optimization', 'Performance Tuning', 'UI/UX Design']
-    },
-    {
-        title: 'Mobile App Development',
-        desc: 'Native and cross-platform mobile applications for iOS and Android. We build intuitive, high-performance apps that users love.',
+        title: 'Mobile Applications',
+        desc: 'Cross-platform mobile systems built for enterprise and consumer markets. High-performance apps engineered for real-world African use cases.',
         video: '/mobile.mp4',
-        color: 'from-indigo-900 to-blue-500',
-        tools: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Firebase', 'GraphQL'],
-        features: ['iOS & Android', 'Cross-Platform', 'App Store Deployment', 'Push Notifications']
+        color: 'from-blue-900 to-sky-500',
+        tools: ['React Native', 'Expo', 'Firebase', 'FastAPI', 'Redis', 'PostgreSQL'],
+        features: ['Cross-platform Apps', 'Enterprise Mobile Systems', 'Consumer Platforms', 'Offline-first Apps']
     },
     {
-        title: 'Cloud & DevOps',
-        desc: 'End-to-end cloud infrastructure and DevOps solutions. We automate deployments, ensure scalability, and maintain robust cloud environments.',
+        title: 'Desktop Systems',
+        desc: 'Enterprise desktop applications and offline-first systems built for operational environments that demand reliability and performance.',
         video: '/devops.mp4',
-        color: 'from-black to-blue-700',
-        tools: ['AWS', 'Docker', 'Kubernetes', 'Terraform', 'CI/CD', 'Monitoring'],
-        features: ['Cloud Migration', 'Infrastructure as Code', 'Auto Scaling', '24/7 Monitoring']
+        color: 'from-indigo-900 to-blue-500',
+        tools: ['Electron', 'Tauri', 'React', 'TypeScript', 'SQLite', 'PostgreSQL'],
+        features: ['Enterprise Desktop Apps', 'Offline-first Systems', 'Internal Operations Software', 'Cross-platform Desktop']
     },
     {
-        title: 'AI & Machine Learning',
-        desc: 'Intelligent solutions powered by artificial intelligence and machine learning. We transform data into actionable insights and automation.',
+        title: 'AI & Agentic Systems',
+        desc: 'Intelligent AI assistants, conversational agents, and multi-agent infrastructures that automate decisions and drive intelligent operations.',
         video: '/ai.mp4',
+        color: 'from-black to-blue-700',
+        tools: ['Amazon Bedrock', 'Python', 'FastAPI', 'LangChain', 'Redis', 'Apache Kafka'],
+        features: ['AI Assistants', 'Intelligent Automation', 'Conversational AI', 'Multi-agent Infrastructure']
+    },
+    {
+        title: 'Cloud & Infrastructure',
+        desc: 'Scalable cloud deployments, DevOps pipelines, and distributed systems engineered for realtime performance and enterprise reliability.',
+        video: '/network.mp4',
         color: 'from-blue-950 to-cyan-400',
-        tools: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'OpenCV', 'NLP', 'Computer Vision'],
-        features: ['Predictive Analytics', 'Natural Language Processing', 'Computer Vision', 'AI Integration']
+        tools: ['Microsoft Azure', 'Railway', 'Contabo', 'Docker', 'BullMQ', 'Apache Kafka'],
+        features: ['Cloud Deployment', 'DevOps Pipelines', 'Realtime Infrastructure', 'Distributed Systems']
+    },
+    {
+        title: 'Data & Analytics',
+        desc: 'Transform raw data into actionable intelligence. Realtime dashboards, predictive analytics, and business intelligence systems.',
+        video: '/data.mp4',
+        color: 'from-black to-blue-600',
+        tools: ['Python', 'PostgreSQL', 'MongoDB', 'Power BI', 'FastAPI', 'Redis'],
+        features: ['Realtime Dashboards', 'Predictive Analytics', 'Business Intelligence', 'Data Pipelines']
     },
     {
         title: 'Cybersecurity',
-        desc: 'Comprehensive security solutions to protect your digital assets. We implement robust security measures and threat detection systems.',
+        desc: 'Comprehensive security solutions protecting your digital assets. Threat detection, vulnerability assessment, and security compliance.',
         video: '/cyber.mp4',
-        color: 'from-black to-blue-600',
-        tools: ['Penetration Testing', 'Encryption', 'Firewalls', 'Security Audits', 'Zero Trust'],
+        color: 'from-blue-800 to-sky-400',
+        tools: ['Penetration Testing', 'Encryption', 'Zero Trust', 'Security Audits', 'Firewalls'],
         features: ['Threat Detection', 'Vulnerability Assessment', 'Data Protection', 'Security Compliance']
     },
     {
-        title: 'Networking Solutions',
-        desc: 'Reliable and secure network infrastructure for businesses of all sizes. We design, implement, and maintain robust networking systems.',
-        video: '/network.mp4',
-        color: 'from-blue-800 to-sky-400',
-        tools: ['Cisco', 'Juniper', 'SD-WAN', 'VPN', 'Wireless', 'Network Monitoring'],
-        features: ['Network Design', 'Implementation', 'Troubleshooting', 'Performance Optimization']
-    },
-    {
         title: 'IoT Development',
-        desc: 'Internet of Things solutions that connect devices and enable smart automation. We build IoT ecosystems that drive efficiency and innovation.',
+        desc: 'Internet of Things solutions connecting devices and enabling smart automation for African industries and smart city ecosystems.',
         video: '/iot.mp4',
         color: 'from-blue-900 to-cyan-500',
-        tools: ['Arduino', 'Raspberry Pi', 'MQTT', 'AWS IoT', 'Sensor Networks', 'Edge Computing'],
-        features: ['Device Connectivity', 'Data Collection', 'Remote Monitoring', 'Automation Systems']
+        tools: ['MQTT', 'Arduino', 'Raspberry Pi', 'AWS IoT', 'Edge Computing', 'Node.js'],
+        features: ['Device Connectivity', 'Realtime Monitoring', 'Smart Automation', 'IoT Ecosystems']
     },
-    {
-        title: 'Blockchain Development',
-        desc: 'Decentralized applications and smart contracts built on blockchain technology. We create secure, transparent, and innovative solutions.',
-        video: '/blochain.mp4',
-        color: 'from-black to-blue-500',
-        tools: ['Ethereum', 'Solidity', 'Web3.js', 'Smart Contracts', 'NFTs', 'DeFi'],
-        features: ['Smart Contracts', 'dApps', 'Tokenization', 'Blockchain Integration']
-    },
-    {
-        title: 'Data Analytics',
-        desc: 'Transform your data into actionable insights with advanced analytics and visualization tools. Make data-driven decisions with confidence.',
-        video: '/data.mp4',
-        color: 'from-blue-800 to-sky-500',
-        tools: ['Tableau', 'Power BI', 'Python', 'R', 'SQL', 'Data Visualization'],
-        features: ['Data Visualization', 'Business Intelligence', 'Reporting', 'Predictive Modeling']
-    },
-    {
-        title: 'UX/UI Design',
-        desc: 'Beautiful, intuitive user interfaces that enhance user experience and drive engagement. We design with purpose and precision.',
-        video: '/ui.mp4',
-        color: 'from-indigo-900 to-blue-400',
-        tools: ['Figma', 'Adobe XD', 'Sketch', 'Prototyping', 'User Research', 'Wireframing'],
-        features: ['User Research', 'Wireframing', 'Prototyping', 'Design Systems']
-    },
-    {
-        title: 'Digital Marketing',
-        desc: 'Comprehensive digital marketing strategies that drive growth and increase brand visibility across all digital channels.',
-        video: '/iot.mp4',
-        color: 'from-blue-950 to-cyan-500',
-        tools: ['SEO', 'Google Analytics', 'Social Media', 'Content Marketing', 'PPC', 'Email Marketing'],
-        features: ['SEO Optimization', 'Social Media Management', 'Content Strategy', 'Performance Analytics']
-    }
 ];
 
 export default function ServicesWeOffer() {
@@ -155,11 +123,11 @@ export default function ServicesWeOffer() {
                 {/* Title */}
                 <div className="text-center max-w-4xl mx-auto mb-20 relative z-10">
                     <h2 className="text-5xl md:text-5xl font-black mb-6 text-[#38b6ff]">
-                        SERVICES WE OFFER
+                        WHAT WE ENGINEER
                     </h2>
                     <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-                        Transforming ideas into exceptional digital experiences through cutting-edge technology and innovative solutions.
-                        We deliver comprehensive services tailored to your unique business needs.
+                        Speqlink architects intelligent software ecosystems, AI-powered systems, and scalable digital
+                        infrastructure. Every solution is engineered for performance, automation, and intelligent decision-making.
                     </p>
                 </div>
 
@@ -201,8 +169,8 @@ export default function ServicesWeOffer() {
                                             ))}
                                             {service.tools.length > 3 && <span className="text-xs">+{service.tools.length - 3} more</span>}
                                         </div>
-                                        <Button variant=" outline " className="w-full animate-bounce text-[#38b6ff]" onClick={(e) => e.stopPropagation()}>
-                                            Click the Video to see credentials
+                                        <Button variant="outline" className="w-full animate-bounce text-[#38b6ff]" onClick={(e) => e.stopPropagation()}>
+                                            Click to see details
                                         </Button>
                                     </div>
                                 </motion.div>
@@ -234,13 +202,48 @@ export default function ServicesWeOffer() {
                                         </div>
                                     </div>
                                     <Button asChild className="mt-auto w-full">
-                                        <a href="/contact" onClick={(e) => e.stopPropagation()}>Get This Service</a>
+                                        <a href="/client" onClick={(e) => e.stopPropagation()}>Build With Speqlink</a>
                                     </Button>
                                 </motion.div>
                             </Card>
                         </div>
                     ))}
                 </div>
+
+                {/* CTA */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className="mt-20 text-center bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-2xl p-12 border border-white/5 relative z-10"
+                >
+                    <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                        Ready to engineer your system?
+                    </h3>
+                    <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-8">
+                        Tell us about your business idea and let Speqlink architect the intelligent solution
+                        that drives your growth.
+                    </p>
+                    <div className="flex flex-col sm:flex-row justify-center gap-4">
+                        <motion.a
+                            href="/client"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
+                        >
+                            Build With Speqlink
+                        </motion.a>
+                        <motion.a
+                            href="/contact"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="px-8 py-3 bg-white/10 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300 font-semibold rounded-lg hover:bg-white/20 dark:hover:bg-gray-700/50 transition-all"
+                        >
+                            Schedule Consultation
+                        </motion.a>
+                    </div>
+                </motion.div>
             </section>
 
             <style jsx>{`

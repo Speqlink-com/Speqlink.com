@@ -22,14 +22,14 @@ const cultures = [
 
 const successStories = [
     {
-        quote: "The culture of trust and experimentation at NestLink allowed me to pivot from traditional design thinking to pioneering our voice interface system that now serves over 50,000 users daily.",
-        author: "Sheldon B., Senior Project Developer",
-        years: "3 years at NestLink"
+        quote: "The culture of trust and experimentation at Speqlink allowed me to pivot from traditional design thinking to pioneering our voice interface system that now serves thousands of users daily.",
+        author: "Sheldon B., COO & Co-Founder",
+        years: "Co-Founder at Speqlink"
     },
     {
         quote: "I never thought my side project would become a core company product. The leadership saw potential in my prototype and gave me the resources and team to build it into what it is today.",
-        author: "Comfortine S., Engineering Lead",
-        years: "3 years at NestLink"
+        author: "Comphortine S., CEO & AI Engineer",
+        years: "Co-Founder at Speqlink"
     }
 ];
 
@@ -50,10 +50,10 @@ export default function AboutCulture() {
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false, amount: 0.5 }}
-                transition={{ delay: 0.1, duration: 0.5 }} // faster
+                transition={{ delay: 0.1, duration: 0.5 }}
                 className="text-lg text-gray-700 dark:text-gray-300 mb-16 max-w-3xl mx-auto"
             >
-                At NestLink, we don't just build products—we cultivate environments where creativity flourishes,
+                At Speqlink, we don't just build products — we cultivate environments where creativity flourishes,
                 partnerships form naturally, and breakthroughs happen when we least expect them. Here are the pillars
                 of our culture that make extraordinary outcomes part of our everyday routine.
             </motion.p>
@@ -117,13 +117,13 @@ export default function AboutCulture() {
                 transition={{ delay: 0.4, duration: 0.5 }} // faster
                 className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-8 rounded-2xl border border-blue-200 dark:border-blue-800/30 max-w-4xl mx-auto"
             >
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">The NestLink Story</h3>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">The Speqlink Story</h3>
                 <p className="text-gray-700 dark:text-gray-300">
-                    What began as a small startup in a garage 3 years ago has blossomed into a community of
-                    innovators who believe technology should serve humanity. Our culture is our compass—it guides
+                    What began as a small startup in Nairobi has blossomed into a community of
+                    innovators who believe technology should serve Africa. Our culture is our compass — it guides
                     our decisions, shapes our products, and reminds us that behind every line of code is a person
-                    striving to make a difference. We're not just building the future; we're ensuring it's a future
-                    worth living in.
+                    striving to make a difference. We're not just building the future of African technology; we're
+                    ensuring it's a future worth living in.
                 </p>
             </motion.div>
         </section>

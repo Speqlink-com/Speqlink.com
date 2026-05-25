@@ -63,9 +63,9 @@ export default function HeroSection() {
         repeat: Infinity
     };
 
-    // ===== NESTLINK MARKER POSITIONS =====
+    // ===== SPEQLINK MARKER POSITIONS =====
     // Adjust these coordinates to change marker distribution on the globe
-    const nestlinkMarkers = [
+    const speqlinkMarkers = [
         { x: 120, y: 120 }, { x: 160, y: 100 }, { x: 200, y: 80 },
         { x: 240, y: 100 }, { x: 280, y: 120 }, { x: 150, y: 150 },
         { x: 190, y: 140 }, { x: 230, y: 150 }, { x: 270, y: 160 },
@@ -139,8 +139,8 @@ export default function HeroSection() {
                         }}
                         transition={{ duration: 0.3 }}
                     >
-                        <span className="text-primary">Nest</span>
-                        <span className="text-foreground">Link</span>
+                        <span className="text-primary">Speq</span>
+                        <span className="text-foreground">link</span>
                     </motion.h1>
 
                     <motion.h1
@@ -154,11 +154,11 @@ export default function HeroSection() {
                         }}
 
                     >
-                        <span className="block">Organisations built for</span>
+                        <span className="block">Architecturing</span>
 
                         <span className="text-primary italic font-extralight font-[cursive]">
                             <TypingEffect
-                                texts={["Perfect 3D Future", "Innovative Designs", "Next-Gen Tech", "Sustainable Solutions", "Your Betterment"]}
+                                texts={["Intelligent Solutions", "AI-Powered Systems", "Digital Ecosystems", "Africa's Future", "Enterprise Infrastructure"]}
                                 typingDelay={100}
                                 deletingDelay={50}
                                 pauseDelay={1500}
@@ -179,9 +179,8 @@ export default function HeroSection() {
                         }}
 
                     >
-                        We create immersive, interactive web experiences — 3D visualizations,
-                        cloud expansions, and AI-driven tools that scale. Elevate your brand
-                        with motion, depth and measurable results.
+                        Speqlink engineers intelligent software ecosystems, AI-powered systems, and scalable digital
+                        infrastructure for Africa's future.
                     </motion.p>
 
                     {/* Buttons with capture scaling */}
@@ -195,15 +194,23 @@ export default function HeroSection() {
                         <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
                             <Link href="/projects">
                                 <Button size="lg" className="gap-2">
-                                    Explore Our Work →
+                                    Explore Products →
                                 </Button>
                             </Link>
                         </motion.div>
 
                         <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
-                            <Link href="/pricing">
+                            <Link href="/client">
                                 <Button size="lg" variant="outline" className="gap-2">
-                                    Talk to Sales
+                                    Build With Speqlink
+                                </Button>
+                            </Link>
+                        </motion.div>
+
+                        <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
+                            <Link href="/invest">
+                                <Button size="lg" variant="outline" className="gap-2">
+                                    Become an Investor
                                 </Button>
                             </Link>
                         </motion.div>
@@ -219,32 +226,32 @@ export default function HeroSection() {
                     >
                         <li className="flex items-center gap-2">
                             <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-green-600/10 text-green-400">✓</span>
-                            <span>Tailored 3D & AI-driven solutions</span>
+                            <span>Intelligent software ecosystems</span>
                         </li>
 
                         <li className="flex items-center gap-2">
                             <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-green-600/10 text-green-400">✓</span>
-                            <span>Scalable cloud-ready platforms</span>
+                            <span>AI-powered platforms & agentic systems</span>
                         </li>
 
                         <li className="flex items-center gap-2">
                             <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-500/10 text-blue-400">✓</span>
-                            <span>Performance & accessibility focused</span>
+                            <span>Scalable digital infrastructure</span>
                         </li>
 
                         <li className="flex items-center gap-2">
                             <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-purple-500/10 text-purple-400">✓</span>
-                            <span>Seamless integration with modern tools</span>
+                            <span>Enterprise mobile, web & desktop systems</span>
                         </li>
 
                         <li className="flex items-center gap-2">
                             <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-yellow-500/10 text-yellow-400">✓</span>
-                            <span>Optimized for speed and reliability</span>
+                            <span>Real-world African solutions</span>
                         </li>
 
                         <li className="flex items-center gap-2">
                             <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-pink-500/10 text-pink-400">✓</span>
-                            <span>User-centric design & experience</span>
+                            <span>Intelligent automation & decision-making</span>
                         </li>
                     </motion.ul>
 
@@ -343,8 +350,8 @@ export default function HeroSection() {
                                 />
                             ))}
 
-                            {/* ===== NESTLINK MARKERS ===== */}
-                            {nestlinkMarkers.map((marker, index) => (
+                            {/* ===== SPEQLINK MARKERS ===== */}
+                            {speqlinkMarkers.map((marker, index) => (
                                 <g key={`marker-${index}`}>
                                     {/* Pulsing dot */}
                                     <motion.circle
@@ -362,7 +369,7 @@ export default function HeroSection() {
                                             delay: isCaptured ? 0 : index * 0.2
                                         }}
                                     />
-                                    {/* NestLink text */}
+                                    {/* Speqlink text */}
                                     <motion.text
                                         x={marker.x + 6}
                                         y={marker.y + 3}
@@ -382,7 +389,7 @@ export default function HeroSection() {
                                             times: isCaptured ? [0, 1] : [0, 0.2, 0.7, 1]
                                         }}
                                     >
-                                        NestLink
+                                        Speqlink
                                     </motion.text>
                                 </g>
                             ))}
@@ -430,11 +437,12 @@ export default function HeroSection() {
                                     <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
                                         <span className="text-lg">🌍</span>
                                     </div>
-                                    <h3 className="text-lg font-bold text-foreground">3D Infrastructure</h3>
+                                    <h3 className="text-lg font-bold text-foreground">African Intelligence</h3>
                                 </div>
                                 <p className="text-muted-foreground leading-relaxed text-sm">
-                                    Our 3D-inspired frameworks are not just visuals — they are immersive
-                                    experiences, engineered to captivate and connect across all devices.
+                                    From smart logistics and agribusiness ecosystems to real estate intelligence,
+                                    Speqlink develops products that connect people, businesses, and opportunities
+                                    through technology.
                                 </p>
                                 <div className="flex gap-2 mt-2">
                                     {['⚡', '🔗', '🎯'].map((icon, idx) => (
@@ -454,11 +462,12 @@ export default function HeroSection() {
                                     <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
                                         <span className="text-lg">🚀</span>
                                     </div>
-                                    <h3 className="text-lg font-bold text-foreground">Interactive Future Ready</h3>
+                                    <h3 className="text-lg font-bold text-foreground">Enterprise Ready</h3>
                                 </div>
                                 <p className="text-muted-foreground leading-relaxed text-sm">
-                                    The future is interactive, and NestLink is building the wireframes
-                                    that carry ideas across borders, industries, and imaginations.
+                                    We architect enterprise-grade mobile applications, desktop systems, web platforms,
+                                    and agentic AI infrastructures designed for performance, automation, and intelligent
+                                    decision-making.
                                 </p>
                                 <div className="flex gap-2 mt-2">
                                     {['🤖', '☁️', '✨'].map((icon, idx) => (

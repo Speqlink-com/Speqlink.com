@@ -34,8 +34,12 @@ const Header = () => {
     const navItems = [
         { name: 'Home', path: '/home' },
         { name: 'About', path: '/about' },
+        { name: 'Products', path: '/products' },
         { name: 'Services', path: '/services' },
+        { name: 'Solutions', path: '/projects' },
         { name: 'Pricing', path: '/pricing' },
+        { name: 'Invest', path: '/invest' },
+        { name: 'Tech Stack', path: '/technology' },
     ];
 
     return (
@@ -54,14 +58,14 @@ const Header = () => {
                 </div>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden md:flex space-x-8 text-base font-medium px-6 py-3 rounded-[20px] backdrop-blur-sm bg-gray-100/50 dark:bg-gray-900/10">
+                <nav className="hidden md:flex space-x-5 text-sm font-medium px-5 py-3 rounded-[20px] backdrop-blur-sm bg-gray-100/50 dark:bg-gray-900/10">
                     {navItems.map((item) => {
                         const isActive = pathname === item.path;
                         return (
                             <motion.div key={item.path} className="relative group">
                                 <Link
                                     href={item.path}
-                                    className={`transition-colors duration-200 relative pb-1
+                                    className={`transition-colors duration-200 relative pb-1 whitespace-nowrap
                     ${isActive
                                             ? 'text-primary font-semibold'
                                             : 'text-foreground hover:text-primary'
@@ -70,14 +74,10 @@ const Header = () => {
                                 >
                                     {item.name}
                                 </Link>
-
-                                {/* Cool hover underline */}
                                 <span
                                     className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-gradient-to-r from-primary to-secondary
                     transition-all duration-300 group-hover:w-full"
                                 />
-
-                                {/* Active link underline (crazy glowing bar) */}
                                 {isActive && (
                                     <motion.span
                                         layoutId="activeLink"
@@ -146,6 +146,16 @@ const Header = () => {
 
                         <Link href="/contact" onClick={() => setMenuOpen(false)}>
                             <Button className="w-full">{'Contact Us'}</Button>
+                        </Link>
+                        <Link href="/client" onClick={() => setMenuOpen(false)}>
+                            <Button className="w-full bg-gradient-to-r from-[#38b6ff] to-cyan-500 text-white border-0">
+                                Build With Speqlink
+                            </Button>
+                        </Link>
+                        <Link href="/invest" onClick={() => setMenuOpen(false)}>
+                            <Button className="w-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black border-0 font-bold">
+                                💼 Invest
+                            </Button>
                         </Link>
                     </motion.nav>
                 )}

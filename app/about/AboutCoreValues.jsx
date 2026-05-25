@@ -11,8 +11,8 @@ const values = [
 ];
 
 const stats = [
-    { value: 120, suffix: '+', label: 'Projects Completed' },
-    { value: 25, suffix: '+', label: 'Enterprise Clients' },
+    { value: 15, suffix: '+', label: 'Systems Delivered' },
+    { value: 8, suffix: '+', label: 'Enterprise Clients' },
     { value: 98, suffix: '%', label: 'Client Satisfaction' },
 ];
 

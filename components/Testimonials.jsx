@@ -5,51 +5,51 @@ import { useState, useEffect } from 'react';
 
 const leaders = [
     {
-        name: 'Amina Kowalski',
-        role: 'CTO - FinTech Innovations',
-        company: 'WealthFront Technologies',
-        quote: 'Nestlink took our product to the next level with their exceptional technical expertise and innovative approach. The team delivered beyond our expectations.',
+        name: 'KCAA Representative',
+        role: 'Director of Operations',
+        company: 'Kenya Civil Aviation Authority',
+        quote: 'Speqlink delivered our Retirement Benefits Scheme System with exceptional precision. The system handles thousands of member records seamlessly and has transformed our operations.',
         rating: 5,
         image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
     },
     {
-        name: 'John Delaney',
-        role: 'Head of Product',
-        company: 'Streamline Analytics',
-        quote: 'The attention to detail in motion design and performance optimization was incredible. Our users noticed the difference immediately.',
+        name: 'Octabell Founder',
+        role: 'CEO',
+        company: 'Octabell Logistics',
+        quote: 'The construction logistics platform Speqlink built for us is exactly what the Kenyan construction industry needed. Realtime tracking, driver matching, and supply optimization — all in one system.',
         rating: 5,
         image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
     },
     {
-        name: 'Rui Li',
-        role: 'VP Engineering',
-        company: 'Nexus Systems',
-        quote: 'Fast, reliable, and highly skilled team. They integrated seamlessly with our existing workflows and delivered ahead of schedule.',
-        rating: 4,
+        name: 'Anirah Client',
+        role: 'CTO',
+        company: 'Anirah Fintech',
+        quote: 'Speqlink architected our entire fintech infrastructure from the ground up. Fast, secure, and scalable. They understood our vision and delivered beyond expectations.',
+        rating: 5,
         image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
     },
     {
-        name: 'Maria Rodriguez',
-        role: 'CEO',
-        company: 'HealthTech Solutions',
-        quote: 'The scalability and security implementations have positioned us for tremendous growth. Exceptional partnership throughout.',
+        name: 'Healthcare Partner',
+        role: 'Medical Director',
+        company: 'Madini Health Network',
+        quote: 'The telemedicine platform Speqlink built connects patients across Africa to specialists. The engineering quality and attention to security compliance was outstanding.',
         rating: 5,
         image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
     },
     {
-        name: 'David Chen',
-        role: 'Technical Director',
-        company: 'AutoTech Industries',
-        quote: 'Their AI integration capabilities transformed our data processing pipeline. The results speak for themselves.',
+        name: 'Enterprise Client',
+        role: 'Head of IT',
+        company: 'Enterprise Solutions Kenya',
+        quote: 'The biometric attendance system Speqlink delivered has completely automated our HR operations. Facial recognition, geo-fencing, and realtime reporting — all working flawlessly.',
         rating: 5,
         image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
     },
     {
-        name: 'Sarah Johnson',
-        role: 'Product Manager',
-        company: 'EduTech Platforms',
-        quote: 'The user experience improvements led to a 40% increase in engagement. The team truly understands user-centric design.',
-        rating: 4,
+        name: 'AgriTech Partner',
+        role: 'Operations Lead',
+        company: 'Jenic Agribusiness',
+        quote: 'Jenic is connecting farmers to markets in ways we never thought possible. Speqlink built an intelligent ecosystem that is genuinely transforming African agriculture.',
+        rating: 5,
         image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
     }
 ];
@@ -94,10 +94,10 @@ export default function Testimonials() {
                 className="text-center mb-16"
             >
                 <h3 className={`text-3xl md:text-4xl font-bold mb-4 ${textColor}`}>
-                    Trusted by Industry Leaders
+                    Trusted by Our Clients
                 </h3>
                 <p className={`max-w-2xl mx-auto ${secondaryText}`}>
-                    Discover what executives and technical leaders say about their experience working with our team
+                    What the businesses and organisations that Speqlink has engineered systems for say about working with us
                 </p>
             </motion.div>
 
@@ -211,12 +211,12 @@ export default function Testimonials() {
                     <div className={secondaryText}>Client Satisfaction</div>
                 </div>
                 <div>
-                    <div className={`text-3xl font-bold text-[lightblue] ${textColor}`}>150+</div>
-                    <div className={secondaryText}>Projects Completed</div>
+                    <div className={`text-3xl font-bold text-[lightblue] ${textColor}`}>15+</div>
+                    <div className={secondaryText}>Systems Delivered</div>
                 </div>
                 <div>
-                    <div className={`text-3xl font-bold text-[lightblue] ${textColor}`}>4.9/5</div>
-                    <div className={secondaryText}>Average Rating</div>
+                    <div className={`text-3xl font-bold text-[lightblue] ${textColor}`}>3</div>
+                    <div className={secondaryText}>Own Products</div>
                 </div>
                 <div>
                     <div className={`text-3xl font-bold text-[lightblue] ${textColor}`}>100%</div>

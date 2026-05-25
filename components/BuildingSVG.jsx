@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const BuildingSVG = ({ progress = 100 }) => {
     // ==== Theme Colors ====
     const outlineStaticColor = "white";
-    const outlineAnimatedColor = "#38b6ff"; // nestlink blue
+    const outlineAnimatedColor = "#38b6ff"; // speqlink blue
     const circuitLineColor = "#00FF66"; // bright green signal
     const windowColor = "#d6ebf6";
 

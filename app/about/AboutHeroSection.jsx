@@ -121,7 +121,7 @@ export default function AboutHeroSection() {
                     >
                         DISCOVER{' '}
                         <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                            NestLink
+                            Speqlink
                         </span>
                     </motion.h1>
                 </div>
@@ -136,10 +136,10 @@ export default function AboutHeroSection() {
                 >
                     <p className="text-xl md:text-2xl leading-relaxed">
                         At{' '}
-                        <span className="font-semibold text-primary">NestLink</span>, we
-                        merge cutting-edge technology with boundless creativity to
-                        deliver intelligent digital solutions that empower businesses
-                        globally. Our philosophy is innovation-driven and people-first.
+                        <span className="font-semibold text-primary">Speqlink</span>, we
+                        engineer intelligent software ecosystems, AI-powered platforms, and
+                        scalable digital infrastructures that solve real-world African challenges.
+                        Our philosophy is innovation-driven and people-first.
                     </p>
 
                     {/* Stats Bar */}
@@ -152,7 +152,7 @@ export default function AboutHeroSection() {
                     >
                         <div className="text-center">
                             <div className="text-3xl md:text-4xl font-bold text-primary">
-                                150+
+                                15+
                             </div>
                             <div className="text-sm text-foreground/60 mt-1">Projects</div>
                         </div>
@@ -164,7 +164,7 @@ export default function AboutHeroSection() {
                         </div>
                         <div className="text-center">
                             <div className="text-3xl md:text-4xl font-bold text-primary">
-                                5+
+                                3+
                             </div>
                             <div className="text-sm text-foreground/60 mt-1">Years</div>
                         </div>

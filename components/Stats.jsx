@@ -50,11 +50,11 @@ function useCountOnView(target) {
 
 export default function Stats() {
     const stats = [
-        { label: 'Revenue helped (USD)', value: 120, suffix: 'k+', color: 'from-cyan-200 to-blue-500' },
-        { label: 'Projects delivered', value: 342, suffix: '+', color: 'from-purple-400 to-pink-500' },
-        { label: 'Enterprise customers', value: 25, suffix: '+', color: 'from-green-400 to-emerald-500' },
-        { label: 'Served clients', value: 180, suffix: '+', color: 'from-yellow-400 to-orange-500' },
-        { label: 'Positive feedback', value: 97, suffix: '%', color: 'from-red-400 to-rose-500' },
+        { label: 'Systems Delivered', value: 15, suffix: '+', color: 'from-cyan-200 to-blue-500' },
+        { label: 'Products Built', value: 3, suffix: '', color: 'from-purple-400 to-pink-500' },
+        { label: 'Enterprise Clients', value: 8, suffix: '+', color: 'from-green-400 to-emerald-500' },
+        { label: 'Team Members', value: 11, suffix: '+', color: 'from-yellow-400 to-orange-500' },
+        { label: 'Client Satisfaction', value: 98, suffix: '%', color: 'from-red-400 to-rose-500' },
     ];
 
     const refsCounts = stats.map((s) => useCountOnView(s.value));

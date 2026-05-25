@@ -11,89 +11,89 @@ if (typeof window !== "undefined") {
     gsap.registerPlugin(ScrollTrigger);
 }
 
-// Updated IT services data with better descriptions and new order
+// Updated services data for Speqlink
 const services = [
     {
-        id: 5,
-        name: "Software Development",
-        description: "Transform your ideas into powerful, scalable applications with our full-stack development expertise. We specialize in custom web and mobile solutions using modern technologies like React, Node.js, Python, and cloud-native architectures. From MVP to enterprise-grade systems, we deliver robust, maintainable code that drives your business forward.",
+        id: 1,
+        name: "Intelligent Web Platforms",
+        description: "Enterprise-grade web systems engineered for performance, scalability, and intelligent automation. We build SaaS platforms, admin dashboards, multi-tenant systems, and enterprise websites using Next.js, React, TanStack, FastAPI, and TypeScript.",
         image: "/software.webp",
-        link: "#",
+        link: "/services",
         icon: Code,
     },
     {
-        id: 12,
-        name: "AI & Machine Learning",
-        description: "Leverage the power of artificial intelligence to automate processes, gain insights from your data, and create intelligent applications. Our AI solutions include predictive analytics, natural language processing, computer vision, and custom ML models tailored to solve your specific business challenges and unlock new opportunities.",
+        id: 2,
+        name: "AI & Agentic Systems",
+        description: "Multi-agent AI infrastructures, conversational AI assistants, and intelligent automation systems powered by Amazon Bedrock and Python. We build decision-support systems that operate autonomously and drive intelligent business outcomes.",
         image: "/ai.jpg",
-        link: "#",
+        link: "/services",
         icon: Brain,
     },
     {
-        id: 2,
-        name: "Cloud Solutions",
-        description: "Accelerate your digital transformation with our comprehensive cloud services. We provide end-to-end cloud migration, multi-cloud strategy, DevOps implementation, and cloud optimization. Whether you're on AWS, Azure, or Google Cloud, we ensure scalable, secure, and cost-effective infrastructure that grows with your business.",
-        image: "/cloud.png",
-        link: "#",
-        icon: Cloud,
-    },
-    {
-        id: 11,
-        name: "Cybersecurity",
-        description: "Protect your digital assets with our enterprise-grade security solutions. We offer comprehensive risk assessments, threat detection, incident response, and security compliance. Our proactive approach includes penetration testing, security monitoring, and employee training to safeguard your business from evolving cyber threats.",
-        image: "/security.webp",
-        link: "#",
-        icon: Shield,
+        id: 3,
+        name: "Mobile Applications",
+        description: "Cross-platform mobile systems built with Expo and React Native for enterprise and consumer markets. High-performance apps engineered for real-world African use cases with offline-first capabilities and seamless user experiences.",
+        image: "/managed.jpeg",
+        link: "/services",
+        icon: Star,
     },
     {
         id: 4,
-        name: "Managed IT Services",
-        description: "Focus on your core business while we handle your IT infrastructure. Our 24/7 monitoring, proactive maintenance, and dedicated support ensure maximum uptime and performance. We provide complete IT management including network monitoring, backup solutions, patch management, and help desk support.",
-        image: "/managed.jpeg",
-        link: "#",
-        icon: Wrench,
+        name: "Cloud & Infrastructure",
+        description: "Scalable cloud deployments on Microsoft Azure, Railway, and Contabo with automated DevOps pipelines. We architect distributed systems, realtime infrastructure with Apache Kafka and Redis, and enterprise-grade cloud environments.",
+        image: "/cloud.png",
+        link: "/services",
+        icon: Cloud,
     },
     {
-        id: 1,
-        name: "Network Infrastructure",
-        description: "Build a robust, high-performance network foundation with our infrastructure solutions. We design, implement, and optimize wired and wireless networks, data centers, and connectivity solutions. Our expertise ensures reliable, secure, and scalable network architecture that supports your current and future business needs.",
-        image: "/network.jpg",
-        link: "#",
-        icon: Network,
+        id: 5,
+        name: "Cybersecurity",
+        description: "Comprehensive security solutions protecting your digital assets. We implement threat detection, vulnerability assessments, penetration testing, zero-trust architectures, and security compliance for enterprise systems.",
+        image: "/security.webp",
+        link: "/services",
+        icon: Shield,
     },
     {
         id: 6,
-        name: "IT Consulting",
-        description: "Make informed technology decisions with our strategic IT consulting services. We provide technology assessment, digital roadmap planning, vendor selection, and IT governance. Our experts help align your technology investments with business objectives for maximum ROI and competitive advantage.",
-        image: "/consultation.webp",
-        link: "#",
-        icon: Lightbulb,
-    },
-    {
-        id: 7,
-        name: "Data Analytics",
-        description: "Turn your data into actionable intelligence with our advanced analytics solutions. We implement BI tools, data visualization, predictive modeling, and real-time analytics dashboards. Uncover hidden patterns, track KPIs, and make data-driven decisions that drive growth and operational efficiency.",
+        name: "Data & Analytics",
+        description: "Transform raw data into actionable intelligence. We build realtime dashboards, predictive analytics systems, and business intelligence platforms using PostgreSQL, MongoDB, Python, and advanced data visualization tools.",
         image: "/data.jpeg",
-        link: "#",
+        link: "/services",
         icon: BarChart3,
     },
     {
-        id: 8,
-        name: "Digital Transformation",
-        description: "Reinvent your business for the digital age with our comprehensive transformation services. We help modernize legacy systems, automate workflows, implement digital platforms, and foster innovation culture. Our holistic approach ensures sustainable digital growth and future-ready business models.",
+        id: 7,
+        name: "Desktop Systems",
+        description: "Enterprise desktop applications and offline-first systems built with Electron and Tauri. We engineer internal operations software and cross-platform desktop systems designed for reliability and performance.",
         image: "/Transformation.jpg",
-        link: "#",
-        icon: Star,
+        link: "/services",
+        icon: Wrench,
+    },
+    {
+        id: 8,
+        name: "IoT Development",
+        description: "Internet of Things solutions connecting devices and enabling smart automation for African industries. We build IoT ecosystems with realtime monitoring, smart automation, and edge computing capabilities.",
+        image: "/network.jpg",
+        link: "/services",
+        icon: Network,
+    },
+    {
+        id: 9,
+        name: "IT Consulting",
+        description: "Strategic technology consulting to help businesses architect the right digital systems. We provide technology assessment, digital roadmap planning, system architecture design, and intelligent solution recommendations.",
+        image: "/consultation.webp",
+        link: "/services",
+        icon: Lightbulb,
     },
 ];
 
 const service1 = {
-    id: 3,
-    name: "IT Support & Maintenance",
-    description: "Ensure uninterrupted business operations with our comprehensive IT support and maintenance services. We offer 24/7 technical assistance, proactive system monitoring, regular maintenance, and rapid issue resolution. Our dedicated support team ensures your technology infrastructure remains reliable, secure, and optimized for peak performance.",
-    image: "/support.png",
-    link: "#",
-    icon: Wrench,
+    id: 0,
+    name: "What We Engineer",
+    description: "Speqlink architects intelligent software ecosystems, AI-powered systems, and scalable digital infrastructure for Africa's future. From enterprise web platforms and mobile applications to agentic AI systems and cloud infrastructure — every solution is engineered for performance, automation, and intelligent decision-making.",
+    image: "/software.webp",
+    link: "/services",
+    icon: Code,
 };
 
 export default function ServicesConstellation() {
@@ -166,23 +166,23 @@ export default function ServicesConstellation() {
                 <div className="container mx-auto px-4 text-center">
                     {/* Main Title with different font */}
                     <h1 className="font-bold tracking-tight text-5xl md:text-7xl font-serif mb-6">
-                        Our Services
+                        What We Engineer
                     </h1>
 
                     {/* Enhanced descriptive paragraph with icons */}
                     <div className="max-w-4xl mx-auto">
-                        <p className="text-xl md:text-2xlleading-relaxed mb-8 font-light  text-black dark:text-gray-400">
-                            Empowering businesses with cutting-edge technology solutions that drive innovation,
-                            efficiency, and growth in the digital era.
+                        <p className="text-xl md:text-2xl leading-relaxed mb-8 font-light text-black dark:text-gray-400">
+                            Speqlink architects intelligent software ecosystems, AI-powered systems, and scalable digital
+                            infrastructure. Every solution is engineered for performance, automation, and intelligent decision-making.
                         </p>
 
                         {/* Interactive Features Grid */}
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
                             <div className="flex flex-col items-center p-4 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-3">
-                                    <Cloud className="w-6 h-6 text-blue-600" />
+                                    <Brain className="w-6 h-6 text-blue-600" />
                                 </div>
-                                <span className="text-sm font-semibold text-gray-800">Cloud First</span>
+                                <span className="text-sm font-semibold text-gray-800">AI-Powered</span>
                             </div>
 
                             <div className="flex flex-col items-center p-4 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -194,16 +194,16 @@ export default function ServicesConstellation() {
 
                             <div className="flex flex-col items-center p-4 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-3">
-                                    <Brain className="w-6 h-6 text-purple-600" />
+                                    <Cloud className="w-6 h-6 text-purple-600" />
                                 </div>
-                                <span className="text-sm font-semibold text-gray-800">AI Powered</span>
+                                <span className="text-sm font-semibold text-gray-800">Cloud Native</span>
                             </div>
 
                             <div className="flex flex-col items-center p-4 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                                 <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-3">
                                     <Lightbulb className="w-6 h-6 text-orange-600" />
                                 </div>
-                                <span className="text-sm font-semibold text-gray-800">Innovation Driven</span>
+                                <span className="text-sm font-semibold text-gray-800">Intelligent Systems</span>
                             </div>
                         </div>
 
@@ -211,15 +211,15 @@ export default function ServicesConstellation() {
                         <div className="flex justify-center items-center space-x-8 text-center">
                             <div className="flex items-center space-x-2">
                                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                                <span className="text-lg font-semibold text-black dark:text-gray-400">24/7 Support</span>
+                                <span className="text-lg font-semibold text-black dark:text-gray-400">African-Built</span>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
-                                <span className="text-lg font-semibold text-black dark:text-gray-400">99.9% Uptime</span>
+                                <span className="text-lg font-semibold text-black dark:text-gray-400">Enterprise Grade</span>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <div className="w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
-                                <span className="text-lg font-semibold text-black dark:text-gray-400">Expert Team</span>
+                                <span className="text-lg font-semibold text-black dark:text-gray-400">Scalable</span>
                             </div>
                         </div>
                     </div>
@@ -279,7 +279,7 @@ function ServiceCard({ service }) {
 
                 {/* Section Label with different font */}
                 <span className="uppercase tracking-widest font-bold text-sm md:text-base text-[#38b6ff] mb-4 font-mono">
-                    Our IT Services
+                    Speqlink Engineering
                 </span>
 
                 {/* Service Title with different font */}

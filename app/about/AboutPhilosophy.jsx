@@ -203,29 +203,29 @@ export default function AboutPhilosophy() {
                         transition={{ duration: 1 }}
                         className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6"
                     >
-                        The NestLink Philosophy
+                        The Speqlink Philosophy
                     </motion.h2>
 
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2, duration: 0.8 }} // faster
+                        transition={{ delay: 0.2, duration: 0.8 }}
                         className="text-gray-700 dark:text-gray-300 text-lg md:text-xl leading-relaxed space-y-6"
                     >
                         <p>
-                            NestLink was born from a simple yet powerful vision: to empower businesses through intelligent,
-                            human-centered digital solutions. Our name embodies our core philosophy—"Nest" represents the
-                            foundation we build for growth, collaboration, and security, while "Link" signifies the connections
-                            we forge between ideas, technology, and people.
+                            Speqlink was born from a simple yet powerful vision: to architect intelligent digital systems
+                            that solve real-world African challenges. Our name embodies our core philosophy — "Speq" represents
+                            the specification and precision we bring to every system we build, while "link" signifies the
+                            connections we forge between ideas, technology, and people across Africa.
                         </p>
 
                         {/* Mission */}
                         <div className="pl-6 border-l-4 border-blue-400 dark:border-blue-600">
                             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">Our Mission</h3>
                             <p>
-                                To continuously innovate and deliver reliable digital ecosystems that transform how businesses
-                                operate and thrive. We're committed to creating solutions that not only solve today's challenges
-                                but also anticipate tomorrow's opportunities, ensuring our partners are always one step ahead.
+                                To transform industries through adaptive technology, intelligent automation, realtime systems,
+                                and scalable digital innovation. We are committed to creating solutions that not only solve
+                                today's challenges but also anticipate tomorrow's opportunities.
                             </p>
                         </div>
 
@@ -233,9 +233,9 @@ export default function AboutPhilosophy() {
                         <div className="pl-6 border-l-4 border-orange-400 dark:border-orange-600">
                             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">Our Vision</h3>
                             <p>
-                                We envision a future where technology serves as a catalyst for creativity, collaboration, and
-                                scalable growth. A world where digital solutions feel intuitive, empowering, and human—bridging
-                                gaps between ambition and achievement, between concept and reality.
+                                To position Speqlink as a next-generation African technology company architecting intelligent
+                                digital systems — a future where African-built technology powers businesses, connects communities,
+                                and drives economic growth across the continent and beyond.
                             </p>
                         </div>
 
@@ -243,25 +243,25 @@ export default function AboutPhilosophy() {
                         <div className="pl-6 border-l-4 border-teal-400 dark:border-teal-600">
                             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">Our Objectives</h3>
                             <ul className="list-disc pl-5 space-y-2">
-                                <li>Create digital experiences that feel personal, intuitive, and empowering</li>
-                                <li>Build scalable solutions that grow alongside our partners' ambitions</li>
-                                <li>Foster innovation through collaborative partnerships rather than transactional relationships</li>
-                                <li>Deliver measurable results that create lasting impact and tangible value</li>
-                                <li>Champion ethical technology that prioritizes privacy, security, and accessibility</li>
+                                <li>Engineer enterprise-grade mobile, web, desktop, and AI systems</li>
+                                <li>Build scalable product ecosystems that attract investment and serve real markets</li>
+                                <li>Develop intelligent automation and agentic AI infrastructures</li>
+                                <li>Deliver measurable results that create lasting impact across African industries</li>
+                                <li>Champion technology that prioritizes performance, security, and accessibility</li>
                             </ul>
                         </div>
 
                         <p>
-                            Every solution we craft is imbued with purpose and precision, designed not just to meet expectations
-                            but to exceed them. We believe technology should feel like magic—seamless, powerful, and transformative—
-                            while remaining grounded in practical results and measurable outcomes.
+                            Every system we architect is built with purpose and precision — designed not just to meet
+                            expectations but to exceed them. We believe technology should be intelligent, scalable, and
+                            transformative while remaining grounded in practical results and measurable outcomes.
                         </p>
 
                         <p className="italic text-gray-600 dark:text-gray-400">
-                            This is our story. This is our promise. This is NestLink.
+                            This is our story. This is our promise. This is Speqlink.
                         </p>
 
-                        {/* Example Shadcn Button for CTA */}
+                        {/* CTA */}
                         <div className="mt-6">
                             <Link href="/contact">
                                 <button className={cn(buttonVariants({ variant: 'default' }), 'px-6 py-3')}>

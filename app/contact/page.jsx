@@ -61,9 +61,9 @@ export default function ContactPage() {
             ),
             title: "Email",
             description: "Send us a message anytime",
-            details: "hello@nestlink.com",
+            details: "hello@speqlink.com",
             action: "Send email",
-            link: "mailto:hello@nestlink.com"
+            link: "mailto:hello@speqlink.com"
         },
         {
             icon: (
@@ -138,7 +138,7 @@ export default function ContactPage() {
                             transition={{ duration: 0.8 }}
                             className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
                         >
-                            Let's Start Something <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">Amazing</span>
+                            Let's Start Something <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#38b6ff] to-cyan-400">Intelligent</span>
                         </motion.h1>
                         <motion.p
                             initial={{ opacity: 0, y: 10 }}
@@ -147,8 +147,8 @@ export default function ContactPage() {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto"
                         >
-                            Ready to transform your ideas into reality? Get in touch with our team to discuss your project,
-                            request a quote, or learn more about our services.
+                            Ready to architect your next intelligent system? Get in touch with the Speqlink team
+                            to discuss your project, request a quote, or learn more about our services.
                         </motion.p>
                     </div>
 
@@ -316,10 +316,13 @@ export default function ContactPage() {
                                                 className="w-full px-4 py-3 bg-white/5 dark:bg-gray-800/50 border border-white/10 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                                             >
                                                 <option value="">Select a subject</option>
-                                                <option value="general">General Inquiry</option>
+                                                <option value="build">Build With Speqlink</option>
+                                                <option value="investment">Investment Inquiry</option>
+                                                <option value="partnership">Product Partnership</option>
                                                 <option value="quote">Request a Quote</option>
-                                                <option value="partnership">Partnership</option>
+                                                <option value="general">General Inquiry</option>
                                                 <option value="support">Technical Support</option>
+                                                <option value="careers">Careers / Recruitment</option>
                                                 <option value="other">Other</option>
                                             </select>
                                         </div>

@@ -22,36 +22,16 @@ export default function ScrollFlipSections() {
 
     const sections = [
         {
-            title: 'CYBERSECURITY SOLUTIONS',
-            subtitle: 'Protecting Your Digital Assets',
+            title: 'INTELLIGENT WEB PLATFORMS',
+            subtitle: 'Enterprise-Grade Systems for Africa\'s Digital Future',
             description:
-                'Our comprehensive cybersecurity services protect your organization from evolving threats. We implement layered security approaches that safeguard your data, applications, and infrastructure.',
+                'Speqlink engineers enterprise-grade web systems built for performance, scalability, and intelligent automation. From SaaS platforms to multi-tenant architectures, every system is designed to handle real-world African business demands.',
             capabilities: [
-                'Threat detection and response systems',
-                'Vulnerability assessment and penetration testing',
-                'Identity and access management solutions',
-                'Security information and event management (SIEM)',
-                'Compliance and regulatory security frameworks',
-            ],
-            image:
-                'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=2070&q=80',
-            textColor: 'text-emerald-300',
-            bgColor: 'bg-emerald-700/40',
-            borderColor: 'border-emerald-500',
-            gradient: 'from-emerald-900/50 to-emerald-700/40',
-            pattern: 'cyber-pattern',
-        },
-        {
-            title: 'FULL-STACK DEVELOPMENT',
-            subtitle: 'Scalable Digital Solutions for Modern Businesses',
-            description:
-                'Our full-stack development expertise spans from responsive front-end interfaces to robust back-end architectures. We create scalable, secure, and high-performance applications that drive digital transformation.',
-            capabilities: [
-                'Enterprise-grade web and mobile application development',
-                'Cloud-native architecture and microservices implementation',
-                'Real-time data processing and WebSocket integrations',
-                'Progressive Web Apps (PWAs) with offline functionality',
-                'DevOps automation and continuous deployment pipelines',
+                'Enterprise websites and SaaS platforms',
+                'Admin dashboards and multi-tenant systems',
+                'Next.js, React, TanStack, FastAPI, TypeScript',
+                'Realtime systems with Apache Kafka and Redis',
+                'Cloud deployment on Azure, Railway, and Contabo',
             ],
             image:
                 'https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&w=2070&q=80',
@@ -62,19 +42,39 @@ export default function ScrollFlipSections() {
             pattern: 'code-pattern',
         },
         {
-            title: 'BLOCKCHAIN INNOVATION',
-            subtitle: 'Secure, Transparent Digital Infrastructure',
+            title: 'AI & AGENTIC SYSTEMS',
+            subtitle: 'Intelligent Automation for the Next Generation',
             description:
-                'Leveraging blockchain technology, we create decentralized solutions that enhance security, transparency, and trust in digital interactions. Our blockchain expertise includes developing smart contracts and custom distributed ledger solutions.',
+                'Speqlink builds multi-agent AI infrastructures, conversational AI assistants, and intelligent automation systems powered by Amazon Bedrock and Python. Our agentic systems operate autonomously and drive intelligent business outcomes.',
             capabilities: [
-                'Smart contract development and auditing',
-                'Custom blockchain network implementation',
-                'Tokenization and digital asset management systems',
-                'Supply chain transparency solutions',
-                'Decentralized finance (DeFi) applications',
+                'Multi-agent AI infrastructure and coordination',
+                'Conversational AI and intelligent assistants',
+                'Amazon Bedrock and Python AI pipelines',
+                'Decision-support and automation systems',
+                'Intelligent lead qualification and business guidance',
             ],
             image:
-                'https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&w=2072&q=80',
+                'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=2069&q=80',
+            textColor: 'text-cyan-300',
+            bgColor: 'bg-cyan-700/40',
+            borderColor: 'border-cyan-500',
+            gradient: 'from-cyan-900/50 to-cyan-700/40',
+            pattern: 'neural-pattern',
+        },
+        {
+            title: 'MOBILE & DESKTOP SYSTEMS',
+            subtitle: 'Cross-Platform Applications for Enterprise and Consumer Markets',
+            description:
+                'We engineer cross-platform mobile applications with Expo and React Native, and enterprise desktop systems with Electron and Tauri. Every application is built for real-world African use cases with offline-first capabilities.',
+            capabilities: [
+                'Cross-platform mobile apps with Expo & React Native',
+                'Enterprise desktop applications with Electron & Tauri',
+                'Offline-first architecture for low-connectivity environments',
+                'Consumer platforms and enterprise mobile systems',
+                'Internal operations software and management systems',
+            ],
+            image:
+                'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=2070&q=80',
             textColor: 'text-purple-300',
             bgColor: 'bg-purple-700/40',
             borderColor: 'border-purple-500',
@@ -82,16 +82,16 @@ export default function ScrollFlipSections() {
             pattern: 'blockchain-pattern',
         },
         {
-            title: 'CLOUD INFRASTRUCTURE',
-            subtitle: 'Scalable, Secure Cloud Solutions',
+            title: 'CLOUD & INFRASTRUCTURE',
+            subtitle: 'Scalable, Distributed Systems for Enterprise Reliability',
             description:
-                'We design and implement robust cloud infrastructures that scale with your business needs. Our cloud solutions ensure high availability, security, and performance for your critical applications and data.',
+                'Speqlink architects scalable cloud deployments on Microsoft Azure, Railway, and Contabo with automated DevOps pipelines. We design distributed systems, realtime infrastructure, and enterprise-grade cloud environments.',
             capabilities: [
-                'Multi-cloud architecture design and implementation',
-                'Container orchestration with Kubernetes',
-                'Serverless computing solutions',
+                'Microsoft Azure, Railway, and Contabo deployments',
+                'Apache Kafka event streaming and Redis pub/sub',
+                'Docker containers and DevOps automation',
+                'BullMQ job queues and distributed processing',
                 'Disaster recovery and business continuity planning',
-                'Cloud security and compliance frameworks',
             ],
             image:
                 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2072&q=80',
@@ -102,24 +102,24 @@ export default function ScrollFlipSections() {
             pattern: 'cloud-pattern',
         },
         {
-            title: 'AI-POWERED SOLUTIONS',
-            subtitle: 'Transforming Industries with Intelligent Systems',
+            title: 'CYBERSECURITY',
+            subtitle: 'Protecting African Digital Infrastructure',
             description:
-                'At NestLink, we develop cutting-edge AI solutions that revolutionize how businesses operate. Our neural network architectures and machine learning models process vast datasets to uncover insights, predict trends, and automate complex decision-making processes.',
+                'Speqlink implements comprehensive security solutions protecting your digital assets. Our cybersecurity team delivers threat detection, vulnerability assessments, penetration testing, and zero-trust architectures for enterprise systems.',
             capabilities: [
-                'Custom AI model development and deployment',
-                'Predictive analytics and data intelligence platforms',
-                'Computer vision systems for quality control',
-                'Natural language processing for customer experience',
-                'AI-powered automation for operational efficiency',
+                'Threat detection and incident response systems',
+                'Vulnerability assessment and penetration testing',
+                'Zero-trust architecture implementation',
+                'Security compliance and regulatory frameworks',
+                'Data protection and encryption systems',
             ],
             image:
-                'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=2069&q=80',
-            textColor: 'text-cyan-300',
-            bgColor: 'bg-cyan-700/40',
-            borderColor: 'border-cyan-500',
-            gradient: 'from-cyan-900/50 to-cyan-700/40',
-            pattern: 'neural-pattern',
+                'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=2070&q=80',
+            textColor: 'text-emerald-300',
+            bgColor: 'bg-emerald-700/40',
+            borderColor: 'border-emerald-500',
+            gradient: 'from-emerald-900/50 to-emerald-700/40',
+            pattern: 'cyber-pattern',
         },
     ];
 

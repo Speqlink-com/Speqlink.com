@@ -11,8 +11,8 @@ const inter = Inter({
 
 // ✅ Metadata is automatically injected in App Router
 export const metadata = {
-  title: "Nestlink.org",
-  description: "Cutting-edge digital solutions",
+  title: "Speqlink — Architecturing Intelligent Solutions",
+  description: "Speqlink is a Kenyan technology company engineering intelligent software ecosystems, AI-powered systems, and scalable digital infrastructure for Africa's future.",
   icons: {
     icon: "/DarkLogo.png",
   },
