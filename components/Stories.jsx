@@ -20,7 +20,7 @@ const stories = [
         quote: "Speqlink built our entire fintech infrastructure from scratch. Exceptional engineering. 💰✨ #Fintech #Speqlink"
     },
     {
-        title: 'RBSS KCAA System',
+        title: 'RBSS Civil Aviation System',
         summary: 'Retirement Benefits Scheme System for Kenya Civil Aviation Authority — a comprehensive enterprise system managing member records and financial reporting.',
         image: 'https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
         name: 'KCAA',

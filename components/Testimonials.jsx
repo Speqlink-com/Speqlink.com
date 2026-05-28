@@ -5,10 +5,10 @@ import { useState, useEffect } from 'react';
 
 const leaders = [
     {
-        name: 'KCAA Representative',
+        name: 'Civil Aviation Representative',
         role: 'Director of Operations',
         company: 'Kenya Civil Aviation Authority',
-        quote: 'Speqlink delivered our Retirement Benefits Scheme System with exceptional precision. The system handles thousands of member records seamlessly and has transformed our operations.',
+        quote: 'Speqlink delivered our RBSS Civil Aviation System with exceptional precision. The system handles thousands of member records seamlessly and has transformed our operations.',
         rating: 5,
         image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
     },

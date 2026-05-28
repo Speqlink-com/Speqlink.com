@@ -26,8 +26,8 @@ We architect enterprise-grade mobile applications, desktop systems, web platform
 
 ## Solutions Delivered
 
-- **Anirah** — Fintech platform infrastructure
-- **RBSS KCAA System** — Retirement Benefits Scheme System for Kenya Civil Aviation Authority
+- **Anirah Fintech** — Fintech platform infrastructure
+- **RBSS Civil Aviation System** — Retirement Benefits Scheme System for Kenya Civil Aviation Authority
 - AI-Powered Dermatology Assistant
 - Smart Secure Health System (SSHS)
 - Secure Attendance System

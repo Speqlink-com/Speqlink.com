@@ -11,6 +11,7 @@ import { motion } from 'framer-motion';
 import Partners from '@/components/Partners';
 import CyberpunkScrollSections from '@/components/Cyberpunk';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 export default function HomePage() {
@@ -93,23 +94,35 @@ export default function HomePage() {
                                 className="grid grid-cols-2 gap-4"
                             >
                                 {[
-                                    { icon: '🏠', label: 'Masqany', desc: 'Real Estate Intelligence', href: '/products' },
-                                    { icon: '🏗️', label: 'Octabell', desc: 'Construction Logistics', href: '/products' },
-                                    { icon: '🌱', label: 'Jenic', desc: 'Agribusiness Commerce', href: '/products' },
+                                    { logo: '/Masqany%20logo.jpeg', label: 'Masqany', desc: 'Real Estate Intelligence', href: '/products' },
+                                    { logo: '/octabell%20logo.webp', label: 'Octabell', desc: 'Construction Logistics', href: '/products' },
+                                    { logo: '/jenic.jpeg', label: 'Jenic', desc: 'Agribusiness Commerce', href: '/products' },
                                     { icon: '🤖', label: 'AI Systems', desc: 'Agentic Infrastructure', href: '/services' },
-                                    { icon: '🏛️', label: 'KCAA RBSS', desc: 'Enterprise System', href: '/projects' },
-                                    { icon: '💰', label: 'Anirah', desc: 'Fintech Platform', href: '/projects' },
-                                ].map((item, i) => (
+                                    { icon: '🏛️', label: 'RBSS', desc: 'Civil Aviation Enterprise System', href: '/projects' },
+                                    { icon: '💰', label: 'Anirah Fintech', desc: 'Digital Finance Platform', href: '/projects' },
+                                ].map((item) => (
                                     <Link href={item.href} key={item.label}>
                                         <motion.div
                                             initial={{ opacity: 0, scale: 0.9 }}
                                             whileInView={{ opacity: 1, scale: 1 }}
                                             viewport={{ once: false }}
-                                            transition={{ duration: 0.4, delay: i * 0.08 }}
+                                            transition={{ duration: 0.4 }}
                                             whileHover={{ scale: 1.04, borderColor: 'rgba(56,182,255,0.5)' }}
                                             className="p-4 rounded-xl border border-white/10 bg-white/5 dark:bg-gray-800/30 backdrop-blur-sm hover:border-[#38b6ff]/40 transition-all cursor-pointer"
                                         >
-                                            <div className="text-2xl mb-2">{item.icon}</div>
+                                            {item.logo ? (
+                                                <div className="w-11 h-11 mb-2 rounded-lg bg-white/5 border border-white/10 p-1.5 flex items-center justify-center overflow-hidden">
+                                                    <Image
+                                                        src={item.logo}
+                                                        alt={`${item.label} logo`}
+                                                        width={32}
+                                                        height={32}
+                                                        className="w-full h-full object-contain"
+                                                    />
+                                                </div>
+                                            ) : (
+                                                <div className="text-2xl mb-2">{item.icon}</div>
+                                            )}
                                             <p className="font-bold text-foreground text-sm">{item.label}</p>
                                             <p className="text-xs text-muted-foreground">{item.desc}</p>
                                         </motion.div>
@@ -150,7 +163,7 @@ export default function HomePage() {
                             {[
                                 {
                                     name: 'Masqany',
-                                    emoji: '🏠',
+                                    logo: '/Masqany%20logo.jpeg',
                                     tagline: 'Affordable Housing at Home Comfort',
                                     desc: 'Intelligent real estate ecosystem connecting Kenyans to homes, apartments, hotels, and affordable housing through smart digital experiences.',
                                     category: 'PropTech',
@@ -161,7 +174,7 @@ export default function HomePage() {
                                 },
                                 {
                                     name: 'Octabell',
-                                    emoji: '🏗️',
+                                    logo: '/octabell%20logo.webp',
                                     tagline: 'Intelligent Construction Logistics Infrastructure',
                                     desc: 'Smart logistics platform connecting constructors, quarry suppliers, and transport drivers through intelligent realtime infrastructure.',
                                     category: 'Logistics / ConTech',
@@ -172,7 +185,7 @@ export default function HomePage() {
                                 },
                                 {
                                     name: 'Jenic',
-                                    emoji: '🌱',
+                                    logo: '/jenic.jpeg',
                                     tagline: 'Intelligent Agribusiness Commerce for Africa',
                                     desc: 'Agribusiness ecosystem connecting small-scale farmers to ready markets through ecommerce, logistics, and agricultural supply-chain intelligence.',
                                     category: 'AgriTech',
@@ -193,7 +206,15 @@ export default function HomePage() {
                                 >
                                     <div className={`p-6 bg-gradient-to-r ${product.color}`}>
                                         <div className="flex items-center gap-3 mb-2">
-                                            <span className="text-4xl">{product.emoji}</span>
+                                            <div className="w-14 h-14 rounded-xl bg-white/15 border border-white/20 p-1.5 flex items-center justify-center overflow-hidden shrink-0">
+                                                <Image
+                                                    src={product.logo}
+                                                    alt={`${product.name} logo`}
+                                                    width={48}
+                                                    height={48}
+                                                    className="w-full h-full object-contain"
+                                                />
+                                            </div>
                                             <div>
                                                 <h3 className="text-2xl font-black text-white">{product.name}</h3>
                                                 <span className="text-xs text-white/70">{product.category}</span>

@@ -14,7 +14,7 @@ export const metadata = {
   title: "Speqlink — Architecturing Intelligent Solutions",
   description: "Speqlink is a Kenyan technology company engineering intelligent software ecosystems, AI-powered systems, and scalable digital infrastructure for Africa's future.",
   icons: {
-    icon: "/DarkLogo.png",
+    icon: "/favicon.png",
   },
 };
 

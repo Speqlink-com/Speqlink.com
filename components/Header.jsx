@@ -154,7 +154,7 @@ const Header = () => {
                         </Link>
                         <Link href="/invest" onClick={() => setMenuOpen(false)}>
                             <Button className="w-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black border-0 font-bold">
-                                💼 Invest
+                                Invest
                             </Button>
                         </Link>
                     </motion.nav>

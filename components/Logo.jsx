@@ -1,15 +1,10 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useTheme } from 'next-themes';
+import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function Logo() {
-    const { theme } = useTheme();
-
-    // Dynamic color for "Link"
-    const linkColor = theme === 'light' ? 'text-black' : 'text-white';
-
     return (
         <Link href="/home" aria-label="Speqlink Home">
             <motion.div
@@ -20,47 +15,22 @@ export default function Logo() {
                 whileTap={{ scale: 0.95 }}
                 className="relative flex items-center cursor-pointer"
             >
-                {/* Speqlink Text */}
-                <span className="text-2xl font-bold relative z-10 leading-none">
-                    <span className="text-[#38b6ff]">Speq</span>
-                    <span className={linkColor}>link</span>
-                </span>
-
-                {/* Stars above N */}
-                <div className="absolute -top-5 left-0 flex flex-col items-center">
-                    {/* Big star */}
-                    <motion.svg
-                        className="w-4 h-4 text-[#38b6ff]"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        animate={{ y: [0, -3, 0], rotate: [0, 20, 0], opacity: [1, 0.6, 1] }}
-                        transition={{ repeat: Infinity, duration: 3 }}
-                    >
-                        <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.164L12 18.896l-7.334 3.86 1.4-8.164L.132 9.21l8.2-1.192z" />
-                    </motion.svg>
-
-                    {/* Bottom two stars forming triangle */}
-                    <div className="flex justify-between w-7">
-                        <motion.svg
-                            className="w-2 h-2 text-[#38b6ff]"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                            animate={{ y: [0, -2, 0], rotate: [0, 180, 0], opacity: [1, 0.5, 1] }}
-                            transition={{ repeat: Infinity, duration: 2.5 }}
-                        >
-                            <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.164L12 18.896l-7.334 3.86 1.4-8.164L.132 9.21l8.2-1.192z" />
-                        </motion.svg>
-                        <motion.svg
-                            className="w-3 h-3 text-[#38b6ff]"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                            animate={{ y: [0, -2, 0], rotate: [0, -150, 0], opacity: [1, 0.5, 1] }}
-                            transition={{ repeat: Infinity, duration: 3 }}
-                        >
-                            <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.164L12 18.896l-7.334 3.86 1.4-8.164L.132 9.21l8.2-1.192z" />
-                        </motion.svg>
-                    </div>
-                </div>
+                <Image
+                    src="/LOGO-%20Dark%20theme.png"
+                    alt="Speqlink logo"
+                    width={160}
+                    height={48}
+                    className="block dark:hidden h-auto w-auto max-h-12 object-contain"
+                    priority
+                />
+                <Image
+                    src="/LOGO%20-%20light%20theme.png"
+                    alt="Speqlink logo"
+                    width={160}
+                    height={48}
+                    className="hidden dark:block h-auto w-auto max-h-12 object-contain"
+                    priority
+                />
             </motion.div>
         </Link>
     );

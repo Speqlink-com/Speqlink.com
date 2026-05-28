@@ -8,15 +8,15 @@ import Link from 'next/link';
 const featuredSolutions = [
     {
         id: 1,
-        title: 'Anirah',
+        title: 'Anirah Fintech',
         category: 'Fintech',
-        description: 'Fintech platform infrastructure engineered for financial services, digital payments, and intelligent transaction management. Built end-to-end by Speqlink.',
+        description: 'Digital finance platform infrastructure engineered for financial services, digital payments, and intelligent transaction management. Built end-to-end by Speqlink.',
         tools: ['React', 'FastAPI', 'PostgreSQL', 'Redis', 'TypeScript'],
         status: 'Delivered',
     },
     {
         id: 2,
-        title: 'RBSS KCAA System',
+        title: 'RBSS Civil Aviation System',
         category: 'Enterprise',
         description: 'Retirement Benefits Scheme System for Kenya Civil Aviation Authority — a comprehensive enterprise system managing retirement benefits, member records, and financial reporting.',
         tools: ['React', 'FastAPI', 'PostgreSQL', 'Python', 'TypeScript'],

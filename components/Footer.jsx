@@ -1,7 +1,14 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Logo from './Logo';
+
+const footerProducts = [
+    { name: 'Masqany', href: '/products', logo: '/Masqany%20logo.jpeg', label: 'PropTech' },
+    { name: 'Octabell', href: '/products', logo: '/octabell%20logo.webp', label: 'Logistics' },
+    { name: 'Jenic', href: '/products', logo: '/jenic.jpeg', label: 'AgriTech' },
+];
 
 
 export default function Footer() {
@@ -88,27 +95,27 @@ export default function Footer() {
                 >
                     <h3 className="text-xl font-semibold text-blue-300 mb-4">Our Products</h3>
                     <ul className="space-y-3 text-text-secondary">
-                        <li>
-                            <a href="/products" className="hover:text-blue-400 transition flex items-center gap-2">
-                                <span>🏠</span>
-                                <span><span className="font-semibold text-white">Masqany</span> — PropTech</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/products" className="hover:text-blue-400 transition flex items-center gap-2">
-                                <span>🏗️</span>
-                                <span><span className="font-semibold text-white">Octabell</span> — Logistics</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/products" className="hover:text-blue-400 transition flex items-center gap-2">
-                                <span>🌱</span>
-                                <span><span className="font-semibold text-white">Jenic</span> — AgriTech</span>
-                            </a>
-                        </li>
+                        {footerProducts.map((product) => (
+                            <li key={product.name}>
+                                <a href={product.href} className="hover:text-blue-400 transition flex items-center gap-3">
+                                    <span className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center p-1 shrink-0">
+                                        <Image
+                                            src={product.logo}
+                                            alt={`${product.name} logo`}
+                                            width={24}
+                                            height={24}
+                                            className="w-full h-full object-contain"
+                                        />
+                                    </span>
+                                    <span>
+                                        <span className="font-semibold text-white">{product.name}</span> — {product.label}
+                                    </span>
+                                </a>
+                            </li>
+                        ))}
                         <li className="pt-2 border-t border-white/10">
                             <a href="/invest" className="hover:text-yellow-300 transition font-semibold text-yellow-400 flex items-center gap-2">
-                                <span>💼</span> Invest in Our Products
+                                Invest in Our Products
                             </a>
                         </li>
                     </ul>

@@ -4,12 +4,13 @@ import Header from '@/components/Header';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const investmentProducts = [
     {
         id: 'masqany',
         name: 'Masqany',
-        emoji: '🏠',
+        logo: '/Masqany%20logo.jpeg',
         tagline: 'Affordable Housing at Home Comfort',
         category: 'PropTech',
         market: '$14B+ East African real estate market',
@@ -28,7 +29,7 @@ const investmentProducts = [
     {
         id: 'octabell',
         name: 'Octabell',
-        emoji: '🏗️',
+        logo: '/octabell%20logo.webp',
         tagline: 'Intelligent Construction Logistics Infrastructure',
         category: 'Logistics / ConTech',
         market: '$3B+ East African construction logistics market',
@@ -47,7 +48,7 @@ const investmentProducts = [
     {
         id: 'jenic',
         name: 'Jenic',
-        emoji: '🌱',
+        logo: '/jenic.jpeg',
         tagline: 'Intelligent Agribusiness Commerce for Africa',
         category: 'AgriTech',
         market: '$1T+ African agri-food market',
@@ -168,7 +169,7 @@ export default function InvestPage() {
                                 { icon: '🌍', title: 'African-First', desc: 'Built specifically for African markets with deep understanding of local challenges and opportunities.' },
                                 { icon: '🤖', title: 'AI-Powered Products', desc: 'Every product is built with intelligent automation, AI recommendations, and realtime data systems.' },
                                 { icon: '📈', title: 'Massive Markets', desc: 'Targeting multi-billion dollar markets in real estate, construction logistics, and agribusiness.' },
-                                { icon: '🏗️', title: 'Proven Engineering', desc: 'The same team that delivered KCAA RBSS, Anirah fintech, and Octabell logistics — enterprise-grade execution.' },
+                                { icon: '🏗️', title: 'Proven Engineering', desc: 'The same team that delivered RBSS Civil Aviation, Anirah Fintech, and Octabell logistics — enterprise-grade execution.' },
                                 { icon: '🔗', title: 'Network Effects', desc: 'Each product gains value as more users join — creating defensible moats and compounding growth.' },
                                 { icon: '🚀', title: 'Pan-African Roadmap', desc: 'Clear expansion roadmap from Kenya to East Africa to the entire continent.' },
                             ].map((item, i) => (
@@ -210,7 +211,15 @@ export default function InvestPage() {
                                     {/* Card header */}
                                     <div className={`p-6 bg-gradient-to-r ${p.color}`}>
                                         <div className="flex items-center gap-3 mb-3">
-                                            <span className="text-4xl">{p.emoji}</span>
+                                            <div className="w-14 h-14 rounded-xl bg-white/15 border border-white/20 p-1.5 flex items-center justify-center overflow-hidden shrink-0">
+                                                <Image
+                                                    src={p.logo}
+                                                    alt={`${p.name} logo`}
+                                                    width={48}
+                                                    height={48}
+                                                    className="w-full h-full object-contain"
+                                                />
+                                            </div>
                                             <div>
                                                 <h3 className="text-2xl font-black text-white">{p.name}</h3>
                                                 <p className="text-white/70 text-sm">{p.category}</p>
@@ -330,8 +339,8 @@ export default function InvestPage() {
                                 {/* Selected product & type summary */}
                                 {(selectedProduct || selectedType) && (
                                     <div className="p-4 rounded-xl bg-yellow-500/10 border border-yellow-500/20 text-sm text-yellow-300">
-                                        {selectedProduct && <p>📦 Product: <strong>{investmentProducts.find(p => p.id === selectedProduct)?.name}</strong></p>}
-                                        {selectedType && <p>💼 Type: <strong>{selectedType}</strong></p>}
+                                        {selectedProduct && <p>Product: <strong>{investmentProducts.find(p => p.id === selectedProduct)?.name}</strong></p>}
+                                        {selectedType && <p>Type: <strong>{selectedType}</strong></p>}
                                     </div>
                                 )}
 

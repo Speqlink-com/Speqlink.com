@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 // Leadership team
@@ -11,11 +12,11 @@ const leaders = [
 
 const contributors = [
     { name: 'Peter Magana', role: 'Software Engineer' },
-    { name: 'Christine Mogambi', role: 'Architect Designer' },
-    { name: 'Nicole Whittney', role: 'AI Engineer' },
+    { name: 'Christine Mogambi', role: 'Architect Designer', img: '/christine.jpeg' },
+    { name: 'Nicole Whittney', role: 'AI Engineer', img: '/romio.png' },
     { name: 'Abigael Nyambura', role: 'Cyber Security Specialist' },
-    { name: 'Eunice Atieno', role: 'Cyber Security Specialist' },
-    { name: 'June Siele', role: 'Data Analyst' },
+    { name: 'Eunice Atieno', role: 'Cyber Security Specialist', img: '/Eunice.jpeg' },
+    { name: 'June Siele', role: 'Data Analyst', img: '/june.jpeg' },
     { name: 'James Matata', role: 'DevOps' },
     { name: 'Karimi', role: 'Sales & Marketing' },
 ];
@@ -127,9 +128,21 @@ export default function AboutLeadership() {
                             transition={{ duration: 0.4, delay: i * 0.07 }}
                             className="p-4 rounded-xl border border-white/10 bg-white/5 dark:bg-gray-800/40 backdrop-blur-sm text-center hover:border-primary/40 transition-all"
                         >
-                            <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-2 text-primary font-bold text-lg">
-                                {c.name.charAt(0)}
-                            </div>
+                            {c.img ? (
+                                <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-2 ring-2 ring-primary/30">
+                                    <Image
+                                        src={c.img}
+                                        alt={c.name}
+                                        width={64}
+                                        height={64}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                            ) : (
+                                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-2 text-primary font-bold text-lg">
+                                    {c.name.charAt(0)}
+                                </div>
+                            )}
                             <p className="font-semibold text-gray-900 dark:text-white text-sm">{c.name}</p>
                             <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">{c.role}</p>
                         </motion.div>
