@@ -6,6 +6,7 @@ import Logo from './Logo';
 
 const footerProducts = [
     { name: 'Masqany', href: '/products', logo: '/Masqany%20logo.jpeg', label: 'PropTech' },
+    { name: 'Speq', href: '/products', logo: '/speq%20logo.jpeg', label: 'Coding Agent' },
     { name: 'Octabell', href: '/products', logo: '/octabell%20logo.webp', label: 'Logistics' },
     { name: 'Jenic', href: '/products', logo: '/jenic.jpeg', label: 'AgriTech' },
 ];

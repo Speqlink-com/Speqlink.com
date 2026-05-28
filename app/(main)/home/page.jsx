@@ -95,6 +95,7 @@ export default function HomePage() {
                             >
                                 {[
                                     { logo: '/Masqany%20logo.jpeg', label: 'Masqany', desc: 'Real Estate Intelligence', href: '/products' },
+                                    { logo: '/speq%20logo.jpeg', label: 'Speq', desc: 'AI Coding Agent', href: '/products' },
                                     { logo: '/octabell%20logo.webp', label: 'Octabell', desc: 'Construction Logistics', href: '/products' },
                                     { logo: '/jenic.jpeg', label: 'Jenic', desc: 'Agribusiness Commerce', href: '/products' },
                                     { icon: '🤖', label: 'AI Systems', desc: 'Agentic Infrastructure', href: '/services' },
@@ -171,6 +172,17 @@ export default function HomePage() {
                                     color: 'from-blue-600 to-cyan-500',
                                     status: 'In Development',
                                     statusColor: 'bg-yellow-500/20 text-yellow-400',
+                                },
+                                {
+                                    name: 'Speq',
+                                    logo: '/speq%20logo.jpeg',
+                                    tagline: 'An intelligent coding agent for your IDE',
+                                    desc: 'AI coding agent extension for developers inside the IDE, designed for context-aware assistance, refactoring, and faster shipping.',
+                                    category: 'Coding Agent',
+                                    market: 'Developer tooling and AI productivity market',
+                                    color: 'from-violet-600 to-fuchsia-500',
+                                    status: 'Live',
+                                    statusColor: 'bg-green-500/20 text-green-400',
                                 },
                                 {
                                     name: 'Octabell',
