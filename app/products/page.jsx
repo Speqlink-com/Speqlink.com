@@ -51,6 +51,30 @@ const products = [
         futureVision: 'A pan-African housing intelligence platform — the go-to ecosystem for anyone seeking accommodation, investment property, or housing services across Africa.',
     },
     {
+        id: 'speq',
+        name: 'Speq',
+        tagline: 'An intelligent coding agent for your IDE',
+        color: 'from-violet-600 to-fuchsia-500',
+        borderColor: 'border-violet-500/40',
+        glowColor: 'bg-violet-500/10',
+        category: 'Coding Agent',
+        logo: '/speq%20logo.jpeg',
+        status: 'Live',
+        statusColor: 'bg-green-500/20 text-green-400',
+        overview: 'Speq is an AI coding agent extension for your IDE, built to help developers write, understand, and ship code faster with context-aware assistance.',
+        description: 'The extension brings coding-agent workflows directly into the development environment, supporting code generation, refactoring, debugging, and intelligent task execution in a seamless IDE experience.',
+        problem: 'Developers often juggle multiple tools for code assistance, documentation, debugging, and planning. That context switching slows momentum and makes it harder to stay in flow while building software.',
+        businessModel: 'Subscription-based pricing for individual developers and teams, with premium features for larger engineering organizations and advanced productivity workflows.',
+        marketOpportunity: 'The developer tooling market continues to expand rapidly as teams adopt AI-powered workflows. Coding agents like Speq are positioned to capture a growing share of daily development activity inside the IDE.',
+        revenueStrategy: 'Monthly and annual subscriptions, team licensing, enterprise plans, and future marketplace offerings for custom agent capabilities and integrations.',
+        aiAdvantage: 'Context-aware code suggestions, intelligent task execution, debugging support, and developer-focused workflows tailored to how teams actually build software.',
+        scalingPotential: 'Phase 1: Individual developers. Phase 2: Small engineering teams. Phase 3: Enterprise developer tooling. Phase 4: Multi-agent software development workflows across platforms.',
+        investorNote: 'Speq is built to become a daily-use developer companion inside the IDE, creating strong retention through workflow integration and recurring subscription potential.',
+        features: ['IDE extension workflow', 'Code generation support', 'Refactoring assistance', 'Debugging help', 'Context-aware suggestions', 'Developer productivity tooling', 'Team-ready licensing', 'Fast in-editor access'],
+        techStack: ['TypeScript', 'React', 'VS Code APIs', 'AI orchestration', 'Node.js', 'REST APIs', 'Local-first workflows'],
+        futureVision: 'A trusted coding companion that lives inside every developer IDE and helps teams build software with more speed, clarity, and confidence.',
+    },
+    {
         id: 'octabell',
         name: 'Octabell',
         tagline: 'Intelligent Construction Logistics Infrastructure',
@@ -350,7 +374,7 @@ export default function ProductsPage() {
                         className="mt-16 text-center bg-gradient-to-r from-yellow-500/10 to-amber-500/10 rounded-2xl p-12 border border-yellow-500/20">
                         <h3 className="text-3xl font-bold text-white mb-4">Invest in African Intelligent Infrastructure</h3>
                         <p className="text-gray-400 max-w-2xl mx-auto mb-8">
-                            Masqany, Octabell, and Jenic are scalable product ecosystems built for Africa's future. Join us as an investor, partner, or early adopter.
+                            Masqany, Speq, Octabell, and Jenic are scalable product ecosystems built for Africa's future. Join us as an investor, partner, or early adopter.
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <Link href="/invest">
