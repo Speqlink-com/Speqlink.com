@@ -21,7 +21,7 @@ export async function POST(req) {
     }
 
     // Save to DB
-    const client = await clientPromise;
+    const client = await clientPromise();
     const db = client.db(MONGODB_DB);
     const col = db.collection("newsletter_subscriptions");
 

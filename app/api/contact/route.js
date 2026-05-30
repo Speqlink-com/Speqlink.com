@@ -17,7 +17,7 @@ export async function POST(req) {
     }
 
     // 1️⃣ Save to DB first
-    const client = await clientPromise;
+    const client = await clientPromise();
     const db = client.db(MONGODB_DB);
     const col = db.collection("contacts");
 

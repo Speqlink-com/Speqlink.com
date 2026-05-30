@@ -99,8 +99,8 @@ export default function HomePage() {
                                     { logo: '/octabell%20logo.webp', label: 'Octabell', desc: 'Construction Logistics', href: '/products' },
                                     { logo: '/jenic.jpeg', label: 'Jenic', desc: 'Agribusiness Commerce', href: '/products' },
                                     { icon: '🤖', label: 'AI Systems', desc: 'Agentic Infrastructure', href: '/services' },
-                                    { icon: '🏛️', label: 'RBSS', desc: 'Civil Aviation Enterprise System', href: '/projects' },
-                                    { icon: '💰', label: 'Anirah Fintech', desc: 'Digital Finance Platform', href: '/projects' },
+                                    { logo: '/kcaa%20rbss%20logo.png', label: 'RBSS', desc: 'Civil Aviation Enterprise System', href: '/projects' },
+                                    { logo: '/anira%20logo.webp', label: 'Anirah Fintech', desc: 'Digital Finance Platform', href: '/projects' },
                                 ].map((item) => (
                                     <Link href={item.href} key={item.label}>
                                         <motion.div
